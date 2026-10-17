@@ -33,7 +33,7 @@ function getEmployees(list) {
 
     newObject.name = employee.textContent.trim();
     newObject.position = employee.dataset.position;
-    newObject.salary = employee.dataset.salary;
+    newObject.salary = makeNumber(employee.dataset.salary);
     newObject.age = employee.dataset.age;
     employeesArray.push(newObject);
   }
